@@ -1,0 +1,16 @@
+body {
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+#prettySection {
+    margin: 1rem 2rem;
+    background-color: white;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    text-decoration-line: underline;
+}
