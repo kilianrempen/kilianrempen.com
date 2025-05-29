@@ -14,3 +14,9 @@ h1 {
     text-align: center;
     text-decoration-line: underline;
 }
+
+#persona {
+    float:left;
+    width:25em;
+    padding-right: 2em;
+}
