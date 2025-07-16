@@ -5,3 +5,8 @@
 html {
     scroll-behavior: smooth;
 }
+
+.website {
+    position: absolute;
+    left: -9999px;
+}
