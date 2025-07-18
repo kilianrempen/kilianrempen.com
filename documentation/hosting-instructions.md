@@ -149,6 +149,7 @@ server {
 - Make sure an older version of certbot is not installed
     - `sudo apt remove certbot`
 - install certbot using snap
+- 
     - `sudo snap install --classic certbot`
     - Make sure the certbot command is available
         - `sudo ln -s /snap/bin/certbot /usr/bin/certbot`

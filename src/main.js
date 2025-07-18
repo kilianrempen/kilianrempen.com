@@ -1,8 +1,8 @@
 import 'flowbite'
 import './index.css'
-// import {contactForm} from "../contact-form.js";
+import {contactForm} from "../contact-form.js";
 
-// contactForm()
+contactForm()
 
 document.addEventListener('DOMContentLoaded', () => {
 });
