@@ -1,11 +1,13 @@
-import './index.css'
 import 'flowbite'
-import {contactForm} from "../contact-form.js";
+import './index.css'
+// import {contactForm} from "../contact-form.js";
 
-contactForm()
+// contactForm()
+
+document.addEventListener('DOMContentLoaded', () => {
+});
 
 document.addEventListener('DOMContentLoaded', function() {
     var currentYear = new Date().getFullYear();
     document.getElementById('currentYear').textContent = currentYear;
 });
-
