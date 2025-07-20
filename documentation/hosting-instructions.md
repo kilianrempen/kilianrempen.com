@@ -3,7 +3,7 @@
 - Create project - New Project in sidebar
     - projects are a way of organizing droplets
     - names and descriptions should be relevant for you, e.g. username-bootcamp
-- Create -> Droplet
+- Create -> Droplet 
     - OS -> Ubuntu -> version 24.04 LTS
     - Basic plan
     - $6 per month
