@@ -119,7 +119,7 @@ server {
     listen 80;
     listen [::]:80;
 
-    root /var/www/kilianrempen.com/html;
+    root /var/www/kilianrempen.com;
     index index.html index.htm index.nginx-debian.html;
 
     server_name kilianrempen.com www.kilianrempen.com;
