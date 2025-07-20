@@ -181,7 +181,7 @@ server {
     - Click on new repository secret
     - Name the secret `PRIVATE_KEY`
     - Paste the private key into the value field
-    - Click add secret
+    - Click add secret 
 - Create a new github action in your repository
     - Create a new directory in your repository called `.github`
     - Create a new directory in the `.github` directory called `workflows`
