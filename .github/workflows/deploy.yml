@@ -25,4 +25,4 @@ jobs:
       - name: Deploy to server
         run: |
          ssh-keyscan -H kilianrempen.com >> ~/.ssh/known_hosts 
-         scp -r ./dist/* krempen@kilianrempen.com:/var/www/kilianrempen.com/html
+         scp -r ./dist/* krempen@kilianrempen.com:/var/www/kilianrempen.com
