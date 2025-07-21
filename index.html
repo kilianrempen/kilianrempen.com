@@ -37,29 +37,27 @@
             </svg>
         </button>
         <div class="hidden w-full md:block md:w-auto text-stone-100 border-b-2 border-b-stone-100 pb-2" id="navbar-default">
-            <ul class="font-medium text-xl flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray-900">
+            <ul class="font-medium text-xl flex flex-col p-4 md:p-0 mt-4 border text-stone-100 border-stone-200 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-gray-900 text-center transition-colors">
                 <li>
-                    <a href="#about-me" class="text-stone-100 block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 transition-colors text-center">About Me</a>
+                    <a href="#about-me" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">About Me</a>
                 </li>
-                <p>|</p>
+                <li class="hidden md:block">|</li>
                 <li>
-                    <a href="#tech-stack" class="text-stone-100 block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 transition-colors text-center">Tech Stack</a>
+                    <a href="#tech-stack" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Tech Stack</a>
                 </li>
-                <p>|</p>
+                <li class="hidden md:block">|</li>
                 <li>
-                    <a href="#web-port" class="text-stone-100 block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 transition-colors text-center">Web Design</a>
+                    <a href="#web-port" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Web Design</a>
                 </li>
-                <p>|</p>
+                <li class="hidden md:block">|</li>
                 <li>
-                    <a href="#ads-marketing-port" class="text-stone-100 block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 transition-colors text-center">Marketing & Advertising</a>
+                    <a href="#contact" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>
                 </li>
-                <p>|</p>
-                <li>
-                    <a href="#copy-port" class="text-stone-100 block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 transition-color text-center">Copy & PR</a>
+                <li class="hidden">
+                    <a href="#ads-marketing-port" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Marketing & Advertising</a>
                 </li>
-                <p>|</p>
-                <li>
-                    <a href="#contact" class="text-stone-100 block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 transition-colors">Contact</a>
+                <li class="hidden">
+                    <a href="#copy-port" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Copy & PR</a>
                 </li>
             </ul>
         </div>
@@ -271,22 +269,22 @@
             <div>
                 <label for="name" class="block mb-2 text-sm font-medium text-gray-400">Your Name</label>
                 <input type="text" id="name" name="name" class="block p-3 w-full text-sm text-white bg-gray-700 rounded-lg border border-gray-600 shadow-sm-light focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400" placeholder="What's your name?" required>
-                <p id="nameError" class="hidden mt-2 text-sm text-red-600"></p>
+                <p id="nameError" class="hidden mt-2 text-sm text-red-500"></p>
             </div>
             <div>
                 <label for="email" class="block mb-2 text-sm font-medium text-gray-400">Your email</label>
                 <input type="email" id="email" name="email" class="shadow-sm-light bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 placeholder-gray-400" placeholder="name@email.com" required>
-                <p id="emailError" class="hidden mt-2 text-sm text-red-600 dark:text-red-500"></p>
+                <p id="emailError" class="hidden mt-2 text-sm text-red-500"></p>
             </div>
             <div>
                 <label for="subject" class="block mb-2 text-sm font-medium text-gray-400">Subject</label>
                 <input type="text" id="subject" name="subject" class="block p-3 w-full text-sm text-white bg-gray-700 rounded-lg border border-gray-600 shadow-sm-light focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400" placeholder="What would you like to discuss?" required>
-                <p id="subjectError" class="hidden mt-2 text-sm text-red-600 dark:text-red-500"></p>
+                <p id="subjectError" class="hidden mt-2 text-sm text-red-500"></p>
             </div>
             <div class="sm:col-span-2">
                 <label for="message" class="block mb-2 text-sm font-medium text-gray-400">Your Message</label>
                 <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-sm text-white bg-gray-700 rounded-lg shadow-sm border border-gray-600 focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400" placeholder="Write your message here..."></textarea>
-                <p id="messageError" class="hidden mt-2 text-sm text-red-600"></p>
+                <p id="messageError" class="hidden mt-2 text-sm text-red-500"></p>
             </div>
             <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-gray-300 bg-gray-700 rounded-lg bg-primary-600 sm:w-fit hover:bg-primary-700 hover:ring-1 hover:bg-gray-600 hover:cursor-pointer hover:ring-gray-300 focus:ring-4 focus:outline-none focus:ring-primary-800">Send Message</button>
             <div  class="hidden p-4 my-4 text-sm rounded-lg" id="status" role="alert">
