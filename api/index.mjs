@@ -67,7 +67,7 @@ const postRouteHandler = async (request, response) => {
         // a try-catch lets the program keep going if an error is encountered
         const subject = result.data.subject ?? undefined
         const mailgunMessage = {
-            from: `${result.data.name} <postmaster@${process.env.MAILGUN_DOMAIN}>`,
+            from: `<postmaster@${process.env.MAILGUN_DOMAIN}>`,
             subject,
             text: `from ${result.data.email}
             ${result.data.message},
