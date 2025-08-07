@@ -17,5 +17,5 @@ html {
 /*}*/
 
 .pill {
-    @apply px-5 py-2 bg-indigo-200 rounded-2xl text-neutral-900 hover:-translate-y-1 hover:shadow-md transition-transform duration-200 cursor-crosshair hover:shadow-indigo-300;
+    @apply px-5 py-2 bg-gradient-to-br from-indigo-200 to-indigo-400 rounded-2xl text-neutral-900 hover:-translate-y-1 hover:shadow-md transition-transform duration-200 cursor-crosshair hover:shadow-indigo-300;
 }
