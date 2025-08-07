@@ -19,3 +19,12 @@ html {
 .pill {
     @apply px-5 py-2 bg-gradient-to-br from-indigo-300 to-indigo-400 rounded-2xl text-neutral-900 hover:-translate-y-1 hover:shadow-md transition-transform duration-200 cursor-crosshair hover:shadow-indigo-400;
 }
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.animate-blink {
+    animation: blink 1s infinite;
+}

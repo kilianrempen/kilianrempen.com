@@ -7,207 +7,339 @@
     <link rel="stylesheet" href="/src/index.css">
     <link rel="icon" type="image/png" href="/img/kr-favicon.png" className="rounded-full">
 </head>
-<body class="font-serif font-extralight bg-neutral-500">
+<body class="font-sans antialiased bg-neutral-900 text-stone-100 scroll-smooth">
 <script type="module" src="/src/main.js"></script>
 
 
-<section id="billboard" class="bg-neutral-900">
-    <div class="mx-auto w-full h-[80vh] md:h-[90vh]">
-        <div class="container text-center mx-auto pt-20">
-            <img src="public/img/kilian-and-watson.jpg" alt="Kilian Rempen" class="mx-auto rounded-full w-1/2 lg:w-1/3 xl:w-1/4">
-            <div class="mt-10">
-                <h1 class="text-stone-100 text-6xl mt-5">Kilian Rempen</h1>
-                <h2 class="text-stone-100 text-3xl mt-5 hidden md:block">Full-Stack Web Developer | Marketing & Brand Expert</h2>
-                <h2 class="text-stone-100 text-3xl mt-5 md:hidden">Full-Stack Web Developer<br>Marketing & Brand Expert</h2>
-
-                <div class="flex justify-center gap-6 mt-6">
-                    <a href="https://github.com/kilianrempen" target="_blank" class="text-stone-300 hover:text-white transition-colors"><img class="w-10 h-10" src="/img/GitHub_icon.png" alt="GitHub"></a>
-                    <a href="https://www.linkedin.com/in/kilian-rempen/" target="_blank" class="text-stone-300 hover:text-white transition-colors"><img class="w-10 h-10" src="/img/LinkedIn_icon.png" alt="LinkedIn"></a>
+<section id="billboard" class="bg-gradient-to-b from-neutral-900 via-neutral-900 to-neutral-800 min-h-screen flex items-center justify-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/5 via-transparent to-purple-600/5 pointer-events-none"></div>
+    <div class="container mx-auto px-6 py-20 relative z-10">
+        <div class="text-center max-w-4xl mx-auto">
+            <div class="relative inline-block mb-8 group">
+                <img src="public/img/kilian-and-watson.jpg" alt="Kilian Rempen" class="mx-auto rounded-full w-48 h-48 lg:w-64 lg:h-64 object-cover ring-4 ring-white/10 group-hover:ring-white/20 transition-all duration-500 shadow-2xl group-hover:shadow-3xl group-hover:scale-105">
+                <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            </div>
+            <div class="space-y-6">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight bg-gradient-to-r from-white via-stone-200 to-stone-400 bg-clip-text text-transparent animate-gradient">Kilian Rempen</h1>
+                <h2 class="text-xl md:text-3xl lg:text-4xl font-light text-stone-300 max-w-3xl mx-auto leading-relaxed">
+                    <span id="typewriter-text" class="block md:inline"></span>
+                    <span id="typewriter-cursor" class="inline-block w-0.5 h-8 bg-stone-300 animate-blink align-bottom"></span>
+                </h2>
+                <div class="flex justify-center gap-8 mt-8">
+                    <a href="https://github.com/kilianrempen" target="_blank" class="group relative p-3 rounded-full bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-110">
+                        <img class="w-8 h-8 filter invert group-hover:brightness-125 transition-all duration-300" src="/img/GitHub_icon.png" alt="GitHub">
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kilian-rempen/" target="_blank" class="group relative p-3 rounded-full bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-110">
+                        <img class="w-8 h-8 filter invert group-hover:brightness-125 transition-all duration-300" src="/img/LinkedIn_icon.png" alt="LinkedIn">
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </a>
                 </div>
-
             </div>
         </div>
     </div>
 </section>
 
-<nav class="border-gray-200 bg-gray-900 sticky top-0 z-50">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
-        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-            </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto text-stone-100 md:border-b-2 md:border-b-stone-100 pb-2" id="navbar-default">
-            <ul class="font-medium text-xl flex flex-col p-4 md:p-0 mt-4 border text-stone-100 border-stone-200 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-gray-900 text-center transition-colors">
-                <li>
-                    <a href="#about-me" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">About Me</a>
-                </li>
-                <li class="hidden md:block hover:cursor-default">|</li>
-                <li>
-                    <a href="#tech-stack" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Tech Stack</a>
-                </li>
-                <li class="hidden md:block hover:cursor-default">|</li>
-                <li>
-                    <a href="#web-port" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Web Design</a>
-                </li>
-                <li class="hidden md:block hover:cursor-default">|</li>
-<!--Sections below to be added in later, when I have time:-->
-<!--                <li>-->
-<!--                    <a href="#ads-marketing-port" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Marketing & Advertising</a>-->
-<!--                </li>-->
-<!--                <li class="hidden md:block">|</li>-->
-<!--                <li>-->
-<!--                    <a href="#copy-port" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Copy & PR</a>-->
-<!--                </li>-->
-<!--                <li class="hidden md:block">|</li>-->
-                <li>
-                    <a href="#contact" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>
-                </li>
-            </ul>
+<nav class="bg-white/5 backdrop-blur-lg border-b border-white/10 sticky top-0 z-50 transition-all duration-300">
+    <div class="max-w-screen-xl mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+            <div class="md:hidden">
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 rounded-lg text-stone-300 hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all duration-300">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6h18M3 12h18M3 18h18"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="hidden md:block">
+                <ul class="flex items-center space-x-2">
+                    <li>
+                        <a href="#about-me" class="px-4 py-2 text-stone-300 hover:text-white rounded-lg hover:bg-white/10 transition-all duration-300 font-medium">About Me</a>
+                    </li>
+                    <li class="text-stone-600">•</li>
+                    <li>
+                        <a href="#tech-stack" class="px-4 py-2 text-stone-300 hover:text-white rounded-lg hover:bg-white/10 transition-all duration-300 font-medium">Tech Stack</a>
+                    </li>
+                    <li class="text-stone-600">•</li>
+                    <li>
+                        <a href="#web-port" class="px-4 py-2 text-stone-300 hover:text-white rounded-lg hover:bg-white/10 transition-all duration-300 font-medium">Web Design</a>
+                    </li>
+                    <li class="text-stone-600">•</li>
+                    <li>
+                        <a href="#contact" class="px-4 py-2 text-stone-300 hover:text-white rounded-lg hover:bg-white/10 transition-all duration-300 font-medium">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="hidden w-full md:hidden" id="navbar-default">
+                <ul class="flex flex-col space-y-2 mt-4 p-4 bg-white/5 backdrop-blur-lg rounded-lg border border-white/10">
+                    <li>
+                        <a href="#about-me" class="block px-4 py-3 text-stone-300 hover:text-white rounded-lg hover:bg-white/10 transition-all duration-300 font-medium">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#tech-stack" class="block px-4 py-3 text-stone-300 hover:text-white rounded-lg hover:bg-white/10 transition-all duration-300 font-medium">Tech Stack</a>
+                    </li>
+                    <li>
+                        <a href="#web-port" class="block px-4 py-3 text-stone-300 hover:text-white rounded-lg hover:bg-white/10 transition-all duration-300 font-medium">Web Design</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="block px-4 py-3 text-stone-300 hover:text-white rounded-lg hover:bg-white/10 transition-all duration-300 font-medium">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
 
-<section id="about-me" class="bg-gray-100">
-    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div class="mr-auto place-self-center lg:col-span-7">
-            <h2 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">About Me</h2>
-            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">I'm a full-stack web developer with a background in marketing, copywriting, and IT. I help small and medium businesses:</p>
-                <ul class="list-disc pl-3 pb-5 max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
-                    <li>Create beautiful websites that impress customers</li>
-                    <li>Craft the perfect messaging and create a brand identity</li>
-                    <li>Implement business software that is both capable and budget-friendly</li>
-                </ul>
-            <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
-                Contact Me Today
-                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </a>
-        </div>
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="/img/about-me.jpg" alt="Kilian and Aidan" class="rounded-4xl shadow-2xl object-cover">
-        </div>
-    </div>
-</section>
-
-<section id="quote" class="bg-gray-900">
-    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-        <h2 class="max-w-2xl mb-10 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-stone-100 mx-auto">Let's Build Something Together</h2>
-        <hr class="text-stone-100 py-5 w-1/2 mx-auto">
-        <figure class="max-w-screen-md mx-auto">
-            <svg class="h-12 mx-auto mb-3 text-stone-400" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
-            </svg>
-            <blockquote>
-                <p class="text-2xl font-medium text-stone-100">"The best way to predict the future is to create it"</p>
-            </blockquote>
-            <figcaption class="flex items-center justify-center mt-6 space-x-3">
-                <img class="w-6 h-6 rounded-full" src="https://sbecouncil.org/wp-content/uploads/2018/10/Drucker-P.jpg" alt="peter drucker">
-                <div class="flex items-center divide-x-2 divide-stone-400">
-                    <div class="pr-3 font-medium text-stone-400">Peter Drucker</div>
-                    <div class="pl-3 text-sm font-light text-stone-400">"The Man who Invented Management"</div>
+<section id="about-me" class="py-20 md:py-32 bg-gradient-to-b from-neutral-800 to-neutral-900">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div class="space-y-6">
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                        About <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Me</span>
+                    </h2>
+                    <p class="text-lg md:text-xl text-stone-300 leading-relaxed">I'm a full-stack web developer with a background in marketing, copywriting, and IT. I help small and medium businesses:</p>
                 </div>
-            </figcaption>
-        </figure>
-    </div>
-</section>
-
-
-<section id="tech-stack" class="bg-neutral-900 py-15 text-stone-100">
-    <h2 class="mb-10 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl mx-auto text-center">Tech Stack:</h2>
-
-    <div class="flex flex-wrap justify-center gap-8 mb-12">
-        <div class="text-center max-w-xs">
-            <h3 class="text-2xl py-3">Frontend</h3>
-            <div class="flex flex-wrap justify-center gap-2">
-                <div class="pill">JavaScript</div>
-                <div class="pill">TypeScript</div>
-                <div class="pill">React.js</div>
-                <div class="pill">React Router</div>
-                <div class="pill">HTML</div>
-                <div class="pill">Tailwind CSS</div>
+                
+                <ul class="space-y-4">
+                    <li class="flex items-start space-x-4 group">
+                        <div class="flex-shrink-0 w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 mt-2 group-hover:scale-125 transition-transform duration-300"></div>
+                        <span class="text-stone-300 text-lg md:text-xl group-hover:text-white transition-colors duration-300">Create beautiful websites that impress customers</span>
+                    </li>
+                    <li class="flex items-start space-x-4 group">
+                        <div class="flex-shrink-0 w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 mt-2 group-hover:scale-125 transition-transform duration-300"></div>
+                        <span class="text-stone-300 text-lg md:text-xl group-hover:text-white transition-colors duration-300">Craft the perfect messaging and create a brand identity</span>
+                    </li>
+                    <li class="flex items-start space-x-4 group">
+                        <div class="flex-shrink-0 w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 mt-2 group-hover:scale-125 transition-transform duration-300"></div>
+                        <span class="text-stone-300 text-lg md:text-xl group-hover:text-white transition-colors duration-300">Implement business software that is both capable and budget-friendly</span>
+                    </li>
+                </ul>
+                
+                <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl hover:from-blue-600 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/25 hover:scale-105 group">
+                    <span>Contact Me Today</span>
+                    <svg class="w-5 h-5 ml-2 -mr-1 group-hover:translate-x-1 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
             </div>
-        </div>
-
-        <div class="text-center max-w-xs">
-            <h3 class="text-2xl py-3">Backend</h3>
-            <div class="flex flex-wrap justify-center gap-2">
-                <div class="pill">Node.js</div>
-                <div class="pill">Express</div>
-                <div class="pill">PostgreSQL</div>
-                <div class="pill">REST APIs</div>
-                <div class="pill">Zod</div>
-            </div>
-        </div>
-
-        <div class="text-center max-w-xs">
-            <h3 class="text-2xl py-3">DevOps / Infrastructure</h3>
-            <div class="flex flex-wrap justify-center gap-2">
-                <div class="pill">Docker</div>
-                <div class="pill">DigitalOcean</div>
-                <div class="pill">Git</div>
-                <div class="pill">GitHub</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="flex flex-wrap justify-center gap-8">
-        <div class="text-center max-w-xs">
-            <h3 class="text-2xl py-3">Platforms & CMS</h3>
-            <div class="flex flex-wrap justify-center gap-2">
-                <div class="pill">WordPress</div>
-                <div class="pill">Shopify</div>
-                <div class="pill">WooCommerce</div>
-                <div class="pill">Oracle NetSuite</div>
-            </div>
-        </div>
-
-        <div class="text-center max-w-xs">
-            <h3 class="text-2xl py-3">Design & Planning</h3>
-            <div class="flex flex-wrap justify-center gap-2">
-                <div class="pill">Figma</div>
-                <div class="pill">Miro</div>
-                <div class="pill">Balsamiq</div>
-                <div class="pill">Adobe Creative Suite</div>
+            
+            <div class="relative group">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-500 opacity-50"></div>
+                <img src="/img/about-kilian-image.jpeg" alt="Kilian and Aidan" class="relative rounded-3xl shadow-2xl object-cover w-full h-96 lg:h-[500px] group-hover:scale-105 transition-transform duration-500">
             </div>
         </div>
     </div>
 </section>
 
-<section id="web-port">
-    <div id="title" class="pt-15">
-        <h2 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-stone-100 mx-auto text-center">Web Design & Development</h2>
-        <h3 class="max-w-2xl mb-4 font-extrabold tracking-tight leading-none text-stone-100 mx-auto text-center text-xl">Click the Buttons Below Each Project for Details.</h3>
+<section id="quote" class="py-20 md:py-32 bg-gradient-to-b from-neutral-900 to-neutral-800 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-transparent to-purple-600/5 pointer-events-none"></div>
+    
+    <div class="max-w-4xl mx-auto px-6 relative z-10">
+        <div class="text-center space-y-12">
+            
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                Let's Build Something <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Together</span>
+            </h2>
+            
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-xl"></div>
+                <figure class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl">
+                    
+                    <svg class="w-16 h-16 mx-auto mb-6 text-blue-400" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                    </svg>
+                    
+                    <blockquote class="space-y-8">
+                        <p class="text-2xl md:text-4xl lg:text-5xl font-light text-white leading-relaxed">"The best way to predict the future is to <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 font-medium">create it</span>"</p>
+                        
+                        <figcaption class="flex items-center justify-center space-x-4 mt-8">
+                            <div class="relative">
+                                <img class="w-12 h-12 rounded-full border-2 border-white/20" src="https://sbecouncil.org/wp-content/uploads/2018/10/Drucker-P.jpg" alt="peter drucker">
+                                <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-lg"></div>
+                            </div>
+                            <div class="text-left space-y-1">
+                                <div class="font-semibold text-white text-lg">Peter Drucker</div>
+                                <div class="text-stone-400 text-sm">"The Man who Invented Management"</div>
+                            </div>
+                        </figcaption>
+                    </blockquote>
+                </figure>
+            </div>
+        </div>
     </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 container mx-auto pt-10 pb-10">
-            <div>
-                <img src="public/img/commonality-logo.png" alt="Commonality Logo" class="rounded-xl mx-auto w-1/2 lg:w-4/5">
-                <h2 class="text-center text-3xl text-gray-100 pt-3">Commonality</h2>
-                <p class="text-center enter text-md text-gray-100">A hobby-partner connection app.</p>
-                <!-- Modal toggle -->
-                <button data-modal-target="web-project-1" data-modal-toggle="web-project-1" class="block border-1 border-gray-300 rounded-lg bg-gray-100 hover:bg-gray-400 hover:border-gray-500 hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5" type="button">View Details</button>
-            </div>
-            <div>
-                <img src="public/img/kilianrempen-com-thumb.png" alt="Kilian Web Portfolio" class="rounded-4xl mx-auto w-1/2 lg:w-4/5">
-                <h2 class="text-center text-3xl text-gray-100 pt-3">kilianrempen.com</h2>
-                <p class="text-center enter text-md text-gray-100">This built-from-scratch portfolio.</p>
+</section>
 
-                <button data-modal-target="web-project-2" data-modal-toggle="web-project-2" class="block border-1 border-gray-300 rounded-lg bg-gray-100 hover:bg-gray-400 hover:border-gray-500 hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5" type="button">View Details</button>
+
+<section id="tech-stack" class="py-20 md:py-32 bg-neutral-900 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/5 via-transparent to-purple-600/5 pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+                Tech <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Stack</span>
+            </h2>
+            <p class="text-lg md:text-xl text-stone-400 max-w-2xl mx-auto">Modern tools and technologies I use to build exceptional digital experiences</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">            <div class="group relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-full hover:border-blue-500/30 transition-all duration-500 hover:scale-105">
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center">Frontend</h3>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="px-4 py-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-white rounded-full text-sm font-medium border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">JavaScript</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-white rounded-full text-sm font-medium border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">TypeScript</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-white rounded-full text-sm font-medium border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">React.js</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-white rounded-full text-sm font-medium border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">React Router</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-white rounded-full text-sm font-medium border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">HTML</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-white rounded-full text-sm font-medium border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20">Tailwind CSS</span>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="public/img/etern.life-logo.png" alt="Etern.Life Logo" class="rounded-4xl mx-auto w-1/2 lg:w-4/5">
-                <h2 class="text-center text-3xl text-gray-100 pt-3">Etern.life</h2>
-                <p class="text-center enter text-md text-gray-100">An Ash-Scattering / Memorial App.</p>
-                <!-- Modal toggle -->
-                <button data-modal-target="web-project-3" data-modal-toggle="web-project-3" class="block border-1 border-gray-300 rounded-lg bg-gray-100 hover:bg-gray-400 hover:border-gray-500 hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5" type="button">View Details</button>
+
+            <div class="group relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-full hover:border-purple-500/30 transition-all duration-500 hover:scale-105">
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center">Backend</h3>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="px-4 py-2 bg-gradient-to-r from-purple-500/20 to-pink-500/20 text-white rounded-full text-sm font-medium border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/20">Node.js</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-purple-500/20 to-pink-500/20 text-white rounded-full text-sm font-medium border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/20">Express</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-purple-500/20 to-pink-500/20 text-white rounded-full text-sm font-medium border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/20">PostgreSQL</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-purple-500/20 to-pink-500/20 text-white rounded-full text-sm font-medium border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/20">REST APIs</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-purple-500/20 to-pink-500/20 text-white rounded-full text-sm font-medium border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/20">Zod</span>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="public/img/tphw-logo.png" alt="Turning Pointe Health & Wellness Logo" class="rounded-4xl mx-auto w-1/2 lg:w-4/5">
-                <h2 class="text-center text-3xl text-gray-100 pt-3">Turning Pointe Health</h2>
-                <p class="text-center enter text-md text-gray-100">A Western & Eastern Medicine Clinic</p>
-                <!-- Modal toggle -->
-                <button data-modal-target="web-project-4" data-modal-toggle="web-project-4" class="block border-1 border-gray-300 rounded-lg bg-gray-100 hover:bg-gray-400 hover:border-gray-500 hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5" type="button">View Details</button>
+
+            <div class="group relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-full hover:border-green-500/30 transition-all duration-500 hover:scale-105">
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center">DevOps/Infrastructure</h3>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="px-4 py-2 bg-gradient-to-r from-green-500/20 to-blue-500/20 text-white rounded-full text-sm font-medium border border-green-500/20 hover:border-green-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-green-500/20">Docker</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-green-500/20 to-blue-500/20 text-white rounded-full text-sm font-medium border border-green-500/20 hover:border-green-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-green-500/20">DigitalOcean</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-green-500/20 to-blue-500/20 text-white rounded-full text-sm font-medium border border-green-500/20 hover:border-green-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-green-500/20">Git</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-green-500/20 to-blue-500/20 text-white rounded-full text-sm font-medium border border-green-500/20 hover:border-green-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-green-500/20">GitHub</span>
+                    </div>
+                </div>
             </div>
+
+            <div class="group relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-full hover:border-orange-500/30 transition-all duration-500 hover:scale-105">
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center">Platforms & CMS</h3>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="px-4 py-2 bg-gradient-to-r from-orange-500/20 to-red-500/20 text-white rounded-full text-sm font-medium border border-orange-500/20 hover:border-orange-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-orange-500/20">WordPress</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-orange-500/20 to-red-500/20 text-white rounded-full text-sm font-medium border border-orange-500/20 hover:border-orange-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-orange-500/20">Shopify</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-orange-500/20 to-red-500/20 text-white rounded-full text-sm font-medium border border-orange-500/20 hover:border-orange-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-orange-500/20">WooCommerce</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-orange-500/20 to-red-500/20 text-white rounded-full text-sm font-medium border border-orange-500/20 hover:border-orange-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-orange-500/20">Oracle NetSuite</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-pink-500/10 to-indigo-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-full hover:border-pink-500/30 transition-all duration-500 hover:scale-105">
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center">Design & Planning</h3>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="px-4 py-2 bg-gradient-to-r from-pink-500/20 to-indigo-500/20 text-white rounded-full text-sm font-medium border border-pink-500/20 hover:border-pink-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-pink-500/20">Figma</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-pink-500/20 to-indigo-500/20 text-white rounded-full text-sm font-medium border border-pink-500/20 hover:border-pink-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-pink-500/20">Miro</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-pink-500/20 to-indigo-500/20 text-white rounded-full text-sm font-medium border border-pink-500/20 hover:border-pink-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-pink-500/20">Balsamiq</span>
+                        <span class="px-4 py-2 bg-gradient-to-r from-pink-500/20 to-indigo-500/20 text-white rounded-full text-sm font-medium border border-pink-500/20 hover:border-pink-400/40 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-pink-500/20">Adobe Creative Suite</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="web-port" class="py-20 md:py-32 bg-gradient-to-b from-neutral-800 to-neutral-900 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-tl from-blue-600/5 via-transparent to-purple-600/5 pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+                Web Design & <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Development</span>
+            </h2>
+            <p class="text-lg md:text-xl text-stone-400 max-w-2xl mx-auto">Click on any project to explore the details and see what we can build together</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">            <div class="group relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 h-full flex flex-col hover:border-blue-500/30 transition-all duration-500 hover:scale-105">
+                    <div class="relative mb-6 overflow-hidden rounded-xl">
+                        <img src="public/img/commonality-logo.png" alt="Commonality Logo" class="w-full h-48 object-cover rounded-xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    <div class="flex-1 space-y-4">
+                        <h3 class="text-2xl font-bold text-white text-center">Commonality</h3>
+                        <p class="text-stone-300 text-center text-sm leading-relaxed">A hobby-partner connection app that brings people together through shared interests</p>
+                    </div>
+                    
+                    <button data-modal-target="web-project-1" data-modal-toggle="web-project-1" class="w-full mt-6 px-6 py-3 text-center text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300 font-medium hover:shadow-lg hover:shadow-blue-500/25">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <div class="group relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 h-full flex flex-col hover:border-purple-500/30 transition-all duration-500 hover:scale-105">
+                    <div class="relative mb-6 overflow-hidden rounded-xl">
+                        <img src="public/img/kilianrempen-com-thumb.png" alt="Kilian Web Portfolio" class="w-full h-48 object-cover rounded-xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    <div class="flex-1 space-y-4">
+                        <h3 class="text-2xl font-bold text-white text-center">kilianrempen.com</h3>
+                        <p class="text-stone-300 text-center text-sm leading-relaxed">This built-from-scratch portfolio showcasing modern web development skills</p>
+                    </div>
+                    
+                    <button data-modal-target="web-project-2" data-modal-toggle="web-project-2" class="w-full mt-6 px-6 py-3 text-center text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 font-medium hover:shadow-lg hover:shadow-purple-500/25">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <div class="group relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 h-full flex flex-col hover:border-green-500/30 transition-all duration-500 hover:scale-105">
+                    <div class="relative mb-6 overflow-hidden rounded-xl">
+                        <img src="public/img/etern.life-logo.png" alt="Etern.Life Logo" class="w-full h-48 object-cover rounded-xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    <div class="flex-1 space-y-4">
+                        <h3 class="text-2xl font-bold text-white text-center">Etern.life</h3>
+                        <p class="text-stone-300 text-center text-sm leading-relaxed">An Ash-Scattering / Memorial App connecting loved ones across the globe</p>
+                    </div>
+                    
+                    <button data-modal-target="web-project-3" data-modal-toggle="web-project-3" class="w-full mt-6 px-6 py-3 text-center text-white bg-gradient-to-r from-green-500 to-blue-500 rounded-lg hover:from-green-600 hover:to-blue-600 transition-all duration-300 font-medium hover:shadow-lg hover:shadow-green-500/25">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <div class="group relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 h-full flex flex-col hover:border-orange-500/30 transition-all duration-500 hover:scale-105">
+                    <div class="relative mb-6 overflow-hidden rounded-xl">
+                        <img src="public/img/tphw-logo.png" alt="Turning Pointe Health & Wellness Logo" class="w-full h-48 object-cover rounded-xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                    <div class="flex-1 space-y-4">
+                        <h3 class="text-2xl font-bold text-white text-center">Turning Pointe Health</h3>
+                        <p class="text-stone-300 text-center text-sm leading-relaxed">A Western & Eastern Medicine Clinic with integrated wellness approach</p>
+                    </div>
+                    
+                    <button data-modal-target="web-project-4" data-modal-toggle="web-project-4" class="w-full mt-6 px-6 py-3 text-center text-white bg-gradient-to-r from-orange-500 to-red-500 rounded-lg hover:from-orange-600 hover:to-red-600 transition-all duration-300 font-medium hover:shadow-lg hover:shadow-orange-500/25">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -262,48 +394,80 @@
     </div>
 </section>
 
-<section id="contact" class="bg-neutral-900">
-    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-stone-200">Contact Me</h2>
-        <p class="mb-8 lg:mb-8 font-light text-center text-stone-200 sm:text-xl">Looking for a web developer? Need to beef up your marketing? Just want to chat? Let me know by filling out the form below!</p>
-        <form id="contact-form" action="#" class="space-y-5" novalidate>
-            <div class="website">
-                <label for="website" class="block text-base md:text-sm font-medium">Website</label>
-                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+<section id="contact" class="py-20 md:py-32 bg-neutral-900 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/5 via-transparent to-purple-600/5 pointer-events-none"></div>
+    
+    <div class="max-w-4xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+                Get In <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Touch</span>
+            </h2>
+            <p class="text-lg md:text-xl text-stone-400 max-w-2xl mx-auto">Ready to build something amazing together? Let's start the conversation.</p>
+        </div>
+
+        <form id="contact-form" action="#" class="space-y-6" novalidate>
+            <div class="website absolute opacity-0 pointer-events-none">
+                <label for="website" class="block text-sm font-medium text-stone-400">Website</label>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" class="bg-transparent border-0">
             </div>
-            <div>
-                <label for="name" class="block mb-2 text-base md:text-sm font-medium text-gray-400">Your Name</label>
-                <input type="text" id="name" name="name" class="block p-3 w-full text-base md:text-sm text-white bg-gray-700 rounded-lg border border-gray-600 shadow-sm-light focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400" placeholder="What's your name?" required>
-                <p id="nameError" class="hidden mt-2 text-sm text-red-500"></p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                    <label for="name" class="block text-sm font-medium text-stone-300">Your Name *</label>
+                    <input type="text" id="name" name="name" class="block w-full px-4 py-3 text-white bg-white/5 backdrop-blur-sm border border-white/20 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-stone-500 transition-all duration-300 hover:border-white/30" placeholder="What's your name?" required>
+                    <p id="nameError" class="hidden mt-2 text-sm text-red-400"></p>
+                </div>
+
+                <div class="space-y-2">
+                    <label for="email" class="block text-sm font-medium text-stone-300">Your Email *</label>
+                    <input type="email" id="email" name="email" class="block w-full px-4 py-3 text-white bg-white/5 backdrop-blur-sm border border-white/20 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-stone-500 transition-all duration-300 hover:border-white/30" placeholder="name@email.com" required>
+                    <p id="emailError" class="hidden mt-2 text-sm text-red-400"></p>
+                </div>
             </div>
-            <div>
-                <label for="email" class="block mb-2 text-base md:text-sm font-medium text-gray-400">Your Email</label>
-                <input type="email" id="email" name="email" class="shadow-sm-light bg-gray-700 border border-gray-600 text-white text-base md:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 placeholder-gray-400" placeholder="name@email.com" required>
-                <p id="emailError" class="hidden mt-2 text-sm text-red-500"></p>
+
+            <div class="space-y-2">
+                <label for="subject" class="block text-sm font-medium text-stone-300">Subject *</label>
+                <input type="text" id="subject" name="subject" class="block w-full px-4 py-3 text-white bg-white/5 backdrop-blur-sm border border-white/20 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-stone-500 transition-all duration-300 hover:border-white/30" placeholder="What would you like to discuss?" required>
+                <p id="subjectError" class="hidden mt-2 text-sm text-red-400"></p>
             </div>
-            <div>
-                <label for="subject" class="block mb-2 text-base md:text-sm font-medium text-gray-400">Subject</label>
-                <input type="text" id="subject" name="subject" class="block p-3 w-full text-base md:text-sm text-white bg-gray-700 rounded-lg border border-gray-600 shadow-sm-light focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400" placeholder="What would you like to discuss?" required>
-                <p id="subjectError" class="hidden mt-2 text-sm text-red-500"></p>
+
+            <div class="space-y-2">
+                <label for="message" class="block text-sm font-medium text-stone-300">Your Message *</label>
+                <textarea id="message" name="message" rows="6" class="block w-full px-4 py-3 text-white bg-white/5 backdrop-blur-sm border border-white/20 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-stone-500 transition-all duration-300 hover:border-white/30 resize-none" placeholder="Tell me about your project..."></textarea>
+                <p id="messageError" class="hidden mt-2 text-sm text-red-400"></p>
             </div>
-            <div class="sm:col-span-2">
-                <label for="message" class="block mb-2 text-base md:text-sm font-medium text-gray-400">Your Message</label>
-                <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-base md:text-sm text-white bg-gray-700 rounded-lg shadow-sm border border-gray-600 focus:ring-primary-500 focus:border-primary-500 placeholder-gray-400" placeholder="Write your message here..."></textarea>
-                <p id="messageError" class="hidden mt-2 text-sm text-red-500"></p>
-            </div>
-            <button type="submit" class="py-3 px-5 text-base md:text-sm font-medium text-center text-gray-300 bg-gray-700 rounded-lg bg-primary-600 sm:w-fit hover:bg-primary-700 hover:ring-1 hover:bg-gray-600 hover:cursor-pointer hover:ring-gray-300 focus:ring-4 focus:outline-none focus:ring-primary-800">Send Message</button>
-            <div  class="hidden p-4 my-4 text-sm rounded-lg" id="status" role="alert">
-            </div>
+
+            <button type="submit" class="w-full md:w-auto px-8 py-4 text-lg font-medium text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl hover:from-blue-600 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/25 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-500/50">
+                Send Message
+            </button>
+            
+            <div class="hidden p-4 my-4 text-sm rounded-lg" id="status" role="alert"></div>
         </form>
     </div>
 </section>
 
-<footer class="bg-black mx-auto py-4 text-stone-300 text-sm text-center italic">
-    <div class="flex justify-center gap-10 mb-3">
-        <a href="https://github.com/kilianrempen" target="_blank" class="text-stone-300 hover:text-white transition-colors"><img class="w-8 h-8" src="/img/GitHub_icon.png" alt="GitHub"></a>
-        <a href="https://www.linkedin.com/in/kilian-rempen/" target="_blank" class="text-stone-300 hover:text-white transition-colors"><img class="w-8 h-8" src="/img/LinkedIn_icon.png" alt="LinkedIn"></a>
+<footer class="bg-black border-t border-white/10 py-12">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col items-center space-y-8">
+            
+            <div class="flex space-x-6">
+                <a href="https://github.com/kilianrempen" target="_blank" class="group relative p-3 rounded-full bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-110">
+                    <img class="w-6 h-6 filter invert group-hover:brightness-125 transition-all duration-300" src="/img/GitHub_icon.png" alt="GitHub">
+                    <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </a>
+                <a href="https://www.linkedin.com/in/kilian-rempen/" target="_blank" class="group relative p-3 rounded-full bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-110">
+                    <img class="w-6 h-6 filter invert group-hover:brightness-125 transition-all duration-300" src="/img/LinkedIn_icon.png" alt="LinkedIn">
+                    <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </a>
+            </div>
+
+            
+            <div class="text-center space-y-2">
+                <p class="text-stone-400 text-sm">Crafted with <span class="text-red-400">❤</span> using modern web technologies</p>
+                <p class="text-stone-500 text-xs">Copyright &copy; <span id="currentYear"></span> Kilian Rempen. All rights reserved.</p>
+            </div>
+        </div>
     </div>
-    <p>Copyright <span id="currentYear"></span> Kilian Rempen.</p>
 </footer>
 
 <!-- Modal Content -->
