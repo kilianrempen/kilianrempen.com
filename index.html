@@ -10,11 +10,10 @@
 <body class="font-serif font-extralight bg-neutral-500">
 <script type="module" src="/src/main.js"></script>
 
-
 <section id="billboard" class="bg-neutral-900">
     <div class="mx-auto w-full h-[80vh] md:h-[90vh]">
         <div class="container text-center mx-auto pt-20">
-            <img src="public/img/kilian-and-watson.jpg" alt="Kilian Rempen" class="mx-auto rounded-full w-1/2 lg:w-1/3 xl:w-1/4">
+            <img src="/img/kilian.jpeg" alt="Kilian Rempen" class="mx-auto rounded-full w-1/2 lg:w-1/3 xl:w-1/4 border-2 border-amber-800">
             <div class="mt-10">
                 <h1 class="text-stone-100 text-6xl mt-5">Kilian Rempen</h1>
                 <h2 class="text-stone-100 text-3xl mt-5 hidden md:block">Full-Stack Web Developer | Marketing & Brand Expert</h2>
@@ -69,49 +68,93 @@
     </div>
 </nav>
 
-<section id="about-me" class="bg-gray-100">
-    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div class="mr-auto place-self-center lg:col-span-7">
-            <h2 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">About Me</h2>
-            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">I'm a full-stack web developer with a background in marketing, copywriting, and IT. I help small and medium businesses:</p>
-                <ul class="list-disc pl-3 pb-5 max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
-                    <li>Create beautiful websites that impress customers</li>
-                    <li>Craft the perfect messaging and create a brand identity</li>
-                    <li>Implement business software that is both capable and budget-friendly</li>
-                </ul>
-            <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
-                Contact Me Today
-                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </a>
+<section id="web-port">
+    <div id="title" class="pt-15">
+        <h2 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-stone-100 mx-auto text-center">Web Design & Development</h2>
+        <h3 class="max-w-2xl mb-4 font-extrabold tracking-tight leading-none text-stone-100 mx-auto text-center text-xl">Click the Buttons Below Each Project for Details.</h3>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 container mx-auto pt-10 pb-10">
+        <div>
+            <img src="public/img/commonality-logo.png" alt="Commonality Logo" class="rounded-xl mx-auto w-1/2 lg:w-4/5">
+            <h2 class="text-center text-3xl text-gray-100 pt-3">Commonality</h2>
+            <p class="text-center enter text-md text-gray-100">A hobby-partner connection app.</p>
+            <!-- Modal toggle -->
+            <button data-modal-target="web-project-1" data-modal-toggle="web-project-1" class="block border-1 border-gray-300 rounded-lg bg-gray-100 hover:bg-gray-400 hover:border-gray-500 hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5" type="button">View Details</button>
         </div>
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="/img/about-kilian-image.jpeg" alt="About Kilian" class="rounded-4xl shadow-2xl object-cover">
+        <div>
+            <img src="public/img/kilianrempen-com-thumb.png" alt="Kilian Web Portfolio" class="rounded-4xl mx-auto w-1/2 lg:w-4/5">
+            <h2 class="text-center text-3xl text-gray-100 pt-3">kilianrempen.com</h2>
+            <p class="text-center enter text-md text-gray-100">This built-from-scratch portfolio.</p>
+
+            <button data-modal-target="web-project-2" data-modal-toggle="web-project-2" class="block border-1 border-gray-300 rounded-lg bg-gray-100 hover:bg-gray-400 hover:border-gray-500 hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5" type="button">View Details</button>
+        </div>
+        <div>
+            <img src="public/img/etern.life-logo.png" alt="Etern.Life Logo" class="rounded-4xl mx-auto w-1/2 lg:w-4/5">
+            <h2 class="text-center text-3xl text-gray-100 pt-3">Etern.life</h2>
+            <p class="text-center enter text-md text-gray-100">An Ash-Scattering / Memorial App.</p>
+            <!-- Modal toggle -->
+            <button data-modal-target="web-project-3" data-modal-toggle="web-project-3" class="block border-1 border-gray-300 rounded-lg bg-gray-100 hover:bg-gray-400 hover:border-gray-500 hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5" type="button">View Details</button>
+        </div>
+        <div>
+            <img src="public/img/tphw-logo.png" alt="Turning Pointe Health & Wellness Logo" class="rounded-4xl mx-auto w-1/2 lg:w-4/5">
+            <h2 class="text-center text-3xl text-gray-100 pt-3">Turning Pointe Health</h2>
+            <p class="text-center enter text-md text-gray-100">A Western & Eastern Medicine Clinic</p>
+            <!-- Modal toggle -->
+            <button data-modal-target="web-project-4" data-modal-toggle="web-project-4" class="block border-1 border-gray-300 rounded-lg bg-gray-100 hover:bg-gray-400 hover:border-gray-500 hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5" type="button">View Details</button>
         </div>
     </div>
 </section>
 
-<section id="quote" class="bg-gray-900">
-    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-        <h2 class="max-w-2xl mb-10 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-stone-100 mx-auto">Let's Build Something Together</h2>
-        <hr class="text-stone-100 py-5 w-1/2 mx-auto">
-        <figure class="max-w-screen-md mx-auto">
-            <svg class="h-12 mx-auto mb-3 text-stone-400" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
-            </svg>
-            <blockquote>
-                <p class="text-2xl font-medium text-stone-100">"The best way to predict the future is to create it"</p>
-            </blockquote>
-            <figcaption class="flex items-center justify-center mt-6 space-x-3">
-                <img class="w-6 h-6 rounded-full" src="https://sbecouncil.org/wp-content/uploads/2018/10/Drucker-P.jpg" alt="peter drucker">
-                <div class="flex items-center divide-x-2 divide-stone-400">
-                    <div class="pr-3 font-medium text-stone-400">Peter Drucker</div>
-                    <div class="pl-3 text-sm font-light text-stone-400">"The Man who Invented Management"</div>
-                </div>
-            </figcaption>
-        </figure>
+<section id="ads-marketing-port" class="hidden bg-neutral-900">
+    <div class="container mx-auto p-15">
+        <h2 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-stone-100 mx-auto text-center">Advertising & Marketing</h2>
+        <h3 class="max-w-2xl mb-4 font-extrabold tracking-tight leading-none text-stone-100 mx-auto text-center text-xl pb-10">Click each tile for more information</h3>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-10">
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="public/img/placeholder.jpeg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="public/img/placeholder.jpeg" alt="">
+            </div>
+            <div>
+                <img class="h-auto max-w-full rounded-lg" src="public/img/placeholder.jpeg" alt="">
+            </div>
+        </div>
     </div>
 </section>
 
+<section id="copy-port" class="hidden">
+    <div class="pt-15">
+        <h2 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-stone-100 mx-auto text-center">Copywriting & Content Writing</h2>
+        <h3 class="max-w-2xl mb-4 font-extrabold tracking-tight leading-none text-stone-100 mx-auto text-center text-xl">Click each tile for more information</h3>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 container mx-auto pt-10 pb-10">
+        <div>
+            <img src="public/img/placeholder.jpeg" alt="placeholder img" class="rounded-xl mx-auto w-1/2 lg:w-4/5">
+            <div class="border-2 border-gray-200 rounded-lg bg-gray-100 my-10 p-4 w-7/10 mx-auto text-center lg:w-4/5">
+                <p>1. Writing example #1</p>
+            </div>
+        </div>
+        <div>
+            <img src="public/img/placeholder.jpeg" alt="placeholder img" class="rounded-xl mx-auto w-1/2 lg:w-4/5">
+            <div class="border-2 border-gray-200 rounded-lg bg-gray-100 my-10 p-4 w-7/10 mx-auto text-center lg:w-4/5">
+                <p>2. Writing example #2</p>
+            </div>
+        </div>
+        <div>
+            <img src="public/img/placeholder.jpeg" alt="placeholder img" class="rounded-xl mx-auto w-1/2 lg:w-4/5">
+            <div class="border-2 border-gray-200 rounded-lg bg-gray-100 my-10 p-4 w-7/10 mx-auto text-center lg:w-4/5">
+                <p>3. Writing example #3</p>
+            </div>
+        </div>
+        <div>
+            <img src="public/img/placeholder.jpeg" alt="placeholder img" class="rounded-xl mx-auto w-1/2 lg:w-4/5">
+            <div class="border-2 border-gray-200 rounded-lg bg-gray-100 my-10 p-4 w-7/10 mx-auto text-center lg:w-4/5">
+                <p>4. Writing example #4</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section id="tech-stack" class="bg-neutral-900 py-15 text-stone-100">
     <h2 class="mb-10 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl mx-auto text-center">Tech Stack:</h2>
@@ -174,91 +217,46 @@
     </div>
 </section>
 
-<section id="web-port">
-    <div id="title" class="pt-15">
-        <h2 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-stone-100 mx-auto text-center">Web Design & Development</h2>
-        <h3 class="max-w-2xl mb-4 font-extrabold tracking-tight leading-none text-stone-100 mx-auto text-center text-xl">Click the Buttons Below Each Project for Details.</h3>
-    </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 container mx-auto pt-10 pb-10">
-            <div>
-                <img src="public/img/commonality-logo.png" alt="Commonality Logo" class="rounded-xl mx-auto w-1/2 lg:w-4/5">
-                <h2 class="text-center text-3xl text-gray-100 pt-3">Commonality</h2>
-                <p class="text-center enter text-md text-gray-100">A hobby-partner connection app.</p>
-                <!-- Modal toggle -->
-                <button data-modal-target="web-project-1" data-modal-toggle="web-project-1" class="block border-1 border-gray-300 rounded-lg bg-gray-100 hover:bg-gray-400 hover:border-gray-500 hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5" type="button">View Details</button>
-            </div>
-            <div>
-                <img src="public/img/kilianrempen-com-thumb.png" alt="Kilian Web Portfolio" class="rounded-4xl mx-auto w-1/2 lg:w-4/5">
-                <h2 class="text-center text-3xl text-gray-100 pt-3">kilianrempen.com</h2>
-                <p class="text-center enter text-md text-gray-100">This built-from-scratch portfolio.</p>
-
-                <button data-modal-target="web-project-2" data-modal-toggle="web-project-2" class="block border-1 border-gray-300 rounded-lg bg-gray-100 hover:bg-gray-400 hover:border-gray-500 hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5" type="button">View Details</button>
-            </div>
-            <div>
-                <img src="public/img/etern.life-logo.png" alt="Etern.Life Logo" class="rounded-4xl mx-auto w-1/2 lg:w-4/5">
-                <h2 class="text-center text-3xl text-gray-100 pt-3">Etern.life</h2>
-                <p class="text-center enter text-md text-gray-100">An Ash-Scattering / Memorial App.</p>
-                <!-- Modal toggle -->
-                <button data-modal-target="web-project-3" data-modal-toggle="web-project-3" class="block border-1 border-gray-300 rounded-lg bg-gray-100 hover:bg-gray-400 hover:border-gray-500 hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5" type="button">View Details</button>
-            </div>
-            <div>
-                <img src="public/img/tphw-logo.png" alt="Turning Pointe Health & Wellness Logo" class="rounded-4xl mx-auto w-1/2 lg:w-4/5">
-                <h2 class="text-center text-3xl text-gray-100 pt-3">Turning Pointe Health</h2>
-                <p class="text-center enter text-md text-gray-100">A Western & Eastern Medicine Clinic</p>
-                <!-- Modal toggle -->
-                <button data-modal-target="web-project-4" data-modal-toggle="web-project-4" class="block border-1 border-gray-300 rounded-lg bg-gray-100 hover:bg-gray-400 hover:border-gray-500 hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5" type="button">View Details</button>
-            </div>
-    </div>
-</section>
-
-<section id="ads-marketing-port" class="hidden bg-neutral-900">
-    <div class="container mx-auto p-15">
-        <h2 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-stone-100 mx-auto text-center">Advertising & Marketing</h2>
-        <h3 class="max-w-2xl mb-4 font-extrabold tracking-tight leading-none text-stone-100 mx-auto text-center text-xl pb-10">Click each tile for more information</h3>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-10">
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="public/img/placeholder.jpeg" alt="">
-            </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="public/img/placeholder.jpeg" alt="">
-            </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg" src="public/img/placeholder.jpeg" alt="">
-            </div>
+<section id="about-me" class="bg-gray-100">
+    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="mr-auto place-self-center lg:col-span-7">
+            <h2 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">About Me</h2>
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">I'm a full-stack web developer with a background in marketing, copywriting, and IT. I help small and medium businesses:</p>
+                <ul class="list-disc pl-3 pb-5 max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
+                    <li>Create beautiful websites that impress customers</li>
+                    <li>Craft the perfect messaging and create a brand identity</li>
+                    <li>Implement business software that is both capable and budget-friendly</li>
+                </ul>
+            <a href="#contact" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
+                Contact Me Today
+                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </a>
+        </div>
+        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+            <img src="/img/kilian-and-watson.jpg" alt="About Kilian" class="rounded-4xl shadow-2xl object-cover">
         </div>
     </div>
 </section>
 
-<section id="copy-port" class="hidden">
-    <div class="pt-15">
-        <h2 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-stone-100 mx-auto text-center">Copywriting & Content Writing</h2>
-        <h3 class="max-w-2xl mb-4 font-extrabold tracking-tight leading-none text-stone-100 mx-auto text-center text-xl">Click each tile for more information</h3>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 container mx-auto pt-10 pb-10">
-        <div>
-            <img src="public/img/placeholder.jpeg" alt="placeholder img" class="rounded-xl mx-auto w-1/2 lg:w-4/5">
-            <div class="border-2 border-gray-200 rounded-lg bg-gray-100 my-10 p-4 w-7/10 mx-auto text-center lg:w-4/5">
-                <p>1. Writing example #1</p>
-            </div>
-        </div>
-        <div>
-            <img src="public/img/placeholder.jpeg" alt="placeholder img" class="rounded-xl mx-auto w-1/2 lg:w-4/5">
-            <div class="border-2 border-gray-200 rounded-lg bg-gray-100 my-10 p-4 w-7/10 mx-auto text-center lg:w-4/5">
-                <p>2. Writing example #2</p>
-            </div>
-        </div>
-        <div>
-            <img src="public/img/placeholder.jpeg" alt="placeholder img" class="rounded-xl mx-auto w-1/2 lg:w-4/5">
-            <div class="border-2 border-gray-200 rounded-lg bg-gray-100 my-10 p-4 w-7/10 mx-auto text-center lg:w-4/5">
-                <p>3. Writing example #3</p>
-            </div>
-        </div>
-        <div>
-            <img src="public/img/placeholder.jpeg" alt="placeholder img" class="rounded-xl mx-auto w-1/2 lg:w-4/5">
-            <div class="border-2 border-gray-200 rounded-lg bg-gray-100 my-10 p-4 w-7/10 mx-auto text-center lg:w-4/5">
-                <p>4. Writing example #4</p>
-            </div>
-        </div>
+<section id="quote" class="bg-gray-900">
+    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+        <h2 class="max-w-2xl mb-10 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-stone-100 mx-auto">Let's Build Something Together</h2>
+        <hr class="text-stone-100 py-5 w-1/2 mx-auto">
+        <figure class="max-w-screen-md mx-auto">
+            <svg class="h-12 mx-auto mb-3 text-stone-400" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+            </svg>
+            <blockquote>
+                <p class="text-2xl font-medium text-stone-100">"The best way to predict the future is to create it"</p>
+            </blockquote>
+            <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                <img class="w-6 h-6 rounded-full" src="https://sbecouncil.org/wp-content/uploads/2018/10/Drucker-P.jpg" alt="peter drucker">
+                <div class="flex items-center divide-x-2 divide-stone-400">
+                    <div class="pr-3 font-medium text-stone-400">Peter Drucker</div>
+                    <div class="pl-3 text-sm font-light text-stone-400">"The Man who Invented Management"</div>
+                </div>
+            </figcaption>
+        </figure>
     </div>
 </section>
 
