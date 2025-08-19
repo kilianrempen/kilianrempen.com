@@ -19,3 +19,21 @@ html {
 .pill {
     @apply px-5 py-2 bg-gradient-to-br from-indigo-300 to-indigo-400 rounded-2xl text-neutral-900 hover:-translate-y-1 hover:shadow-md transition-transform duration-200 cursor-crosshair hover:shadow-indigo-400;
 }
+
+.paper-texture {
+
+    background: #fdf6e3;
+    background-image: radial-gradient(rgba(0,0,0,0.02) 1px, transparent 1px);
+    background-size: 20px 20px;
+
+}
+
+@keyframes unroll {
+    0% { transform: scaleY(0.1) translateY(-20px); opacity: 0; transform-origin: top; }
+    60% { transform: scaleY(1.05) translateY(0); opacity: 1; }
+    100% { transform: scaleY(1) translateY(0); }
+}
+
+.unroll {
+    animation: unroll 0.5s ease-out forwards;
+}
