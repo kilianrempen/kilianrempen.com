@@ -10,7 +10,7 @@
 <body class="font-serif font-extralight bg-neutral-500">
 <script type="module" src="/src/main.js"></script>
 
-<section id="billboard" class="bg-neutral-900">
+<section id="billboard" class="bg-gradient-to-t from-neutral-800 to-neutral-900">
     <div class="mx-auto w-full h-[80vh] md:h-[90vh]">
         <div class="container text-center mx-auto pt-20">
             <img src="/img/kilian.jpeg" alt="Kilian Rempen" class="mx-auto rounded-full w-1/2 lg:w-2/7 2xl:w-1/3 border-2 border-amber-800">
@@ -120,7 +120,9 @@
     </div>
 </nav>
 
-<section id="web-port">
+<section id="web-port" class="py-20 md:py-32 bg-gradient-to-b from-neutral-800 to-neutral-900 relative overflow-hidden">
+    <!--Dope purple glow to maybe add:-->
+    <!--    <div class="absolute inset-0 bg-gradient-to-tl from-blue-600/5 via-transparent to-purple-600/5 pointer-events-none"></div>-->
     <div id="title" class="pt-15">
         <h2 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-stone-100 mx-auto text-center">Web Design & Development</h2>
         <h3 class="max-w-2xl mb-4 font-extrabold tracking-tight leading-none text-stone-100 mx-auto text-center text-xl">Click the Buttons Below Each Project for Details.</h3>
@@ -153,6 +155,94 @@
             <p class="text-center enter text-md text-gray-100">A Western & Eastern Medicine Clinic</p>
             <!-- Modal toggle -->
             <button data-modal-target="web-project-4" data-modal-toggle="web-project-4" class="block border-1 border-gray-300 rounded-lg bg-gray-100 hover:bg-gray-400 hover:border-gray-500 hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5" type="button">View Details</button>
+        </div>
+    </div>
+</section>
+
+<section id="web-port" class="py-20 md:py-32 bg-gradient-to-b from-neutral-800 to-neutral-900 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+                Web Design & <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Development</span>
+            </h2>
+            <p class="text-lg md:text-xl text-stone-400 max-w-2xl mx-auto">Click on any project to explore the details and see what we can build together</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">            <div class="group relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+            <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 h-full flex flex-col hover:border-blue-500/30 transition-all duration-500 hover:scale-105">
+                <div class="relative mb-6 overflow-hidden rounded-xl">
+                    <img src="public/img/commonality-logo.png" alt="Commonality Logo" class="w-full h-48 object-cover rounded-xl group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <div class="flex-1 space-y-4">
+                    <h3 class="text-2xl font-bold text-white text-center">Commonality</h3>
+                    <p class="text-stone-300 text-center text-sm leading-relaxed">A hobby-partner connection app that brings people together through shared interests</p>
+                </div>
+
+                <button data-modal-target="web-project-1" data-modal-toggle="web-project-1" class="w-full mt-6 px-6 py-3 text-center text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300 font-medium hover:shadow-lg hover:shadow-blue-500/25">
+                    View Details
+                </button>
+            </div>
+        </div>
+
+            <div class="group relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 h-full flex flex-col hover:border-purple-500/30 transition-all duration-500 hover:scale-105">
+                    <div class="relative mb-6 overflow-hidden rounded-xl">
+                        <img src="public/img/kilianrempen-com-thumb.png" alt="Kilian Web Portfolio" class="w-full h-48 object-cover rounded-xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+
+                    <div class="flex-1 space-y-4">
+                        <h3 class="text-2xl font-bold text-white text-center">kilianrempen.com</h3>
+                        <p class="text-stone-300 text-center text-sm leading-relaxed">This built-from-scratch portfolio showcasing modern web development skills</p>
+                    </div>
+
+                    <button data-modal-target="web-project-2" data-modal-toggle="web-project-2" class="w-full mt-6 px-6 py-3 text-center text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 font-medium hover:shadow-lg hover:shadow-purple-500/25">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <div class="group relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 h-full flex flex-col hover:border-green-500/30 transition-all duration-500 hover:scale-105">
+                    <div class="relative mb-6 overflow-hidden rounded-xl">
+                        <img src="public/img/etern.life-logo.png" alt="Etern.Life Logo" class="w-full h-48 object-cover rounded-xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+
+                    <div class="flex-1 space-y-4">
+                        <h3 class="text-2xl font-bold text-white text-center">Etern.life</h3>
+                        <p class="text-stone-300 text-center text-sm leading-relaxed">An Ash-Scattering / Memorial App connecting loved ones across the globe</p>
+                    </div>
+
+                    <button data-modal-target="web-project-3" data-modal-toggle="web-project-3" class="w-full mt-6 px-6 py-3 text-center text-white bg-gradient-to-r from-green-500 to-blue-500 rounded-lg hover:from-green-600 hover:to-blue-600 transition-all duration-300 font-medium hover:shadow-lg hover:shadow-green-500/25">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <div class="group relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 opacity-0 group-hover:opacity-100"></div>
+                <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 h-full flex flex-col hover:border-orange-500/30 transition-all duration-500 hover:scale-105">
+                    <div class="relative mb-6 overflow-hidden rounded-xl">
+                        <img src="public/img/tphw-logo.png" alt="Turning Pointe Health & Wellness Logo" class="w-full h-48 object-cover rounded-xl group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+
+                    <div class="flex-1 space-y-4">
+                        <h3 class="text-2xl font-bold text-white text-center">Turning Pointe Health</h3>
+                        <p class="text-stone-300 text-center text-sm leading-relaxed">A Western & Eastern Medicine Clinic with integrated wellness approach</p>
+                    </div>
+
+                    <button data-modal-target="web-project-4" data-modal-toggle="web-project-4" class="w-full mt-6 px-6 py-3 text-center text-white bg-gradient-to-r from-orange-500 to-red-500 rounded-lg hover:from-orange-600 hover:to-red-600 transition-all duration-300 font-medium hover:shadow-lg hover:shadow-orange-500/25">
+                        View Details
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </section>
