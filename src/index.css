@@ -19,3 +19,34 @@ html {
 .pill {
     @apply px-5 py-2 bg-gradient-to-br from-indigo-300 to-indigo-400 rounded-2xl text-neutral-900 hover:-translate-y-1 hover:shadow-md transition-transform duration-200 cursor-crosshair hover:shadow-indigo-400;
 }
+
+/* Snowfall animation styles */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: gray;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    user-select: none;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 0;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(-10vh) translateX(0px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: var(--target-opacity, 0.8);
+    }
+    90% {
+        opacity: var(--target-opacity, 0.8);
+    }
+    100% {
+        transform: translateY(110vh) translateX(var(--drift, 0px)) rotate(360deg);
+        opacity: 0;
+    }
+}
