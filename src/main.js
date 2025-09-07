@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function createSnowfall() {
     const snowfallContainer = document.getElementById('snowfall');
-    const numFlakes = 100;
+    const numFlakes = window.innerWidth < 768 ? 35 : 100;
     const snowflakeSymbols = ['❄', '❅', '❆', '•', '∙'];
 
     for (let i = 0; i < numFlakes; i++) {
