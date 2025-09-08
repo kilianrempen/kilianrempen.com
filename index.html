@@ -8,14 +8,14 @@
     <link rel="icon" type="image/png" href="/img/kr-favicon.png" className="rounded-full">
 </head>
 <body class="font-serif antialiased bg-neutral-900 text-stone-100 scroll-smooth">
-<div id="snowfall" class="fixed inset-0 pointer-events-none z-50"></div>
+<div id="snowfall" class="fixed inset-0 pointer-events-none z-30"></div>
 
 <script type="module" src="/src/main.js"></script>
 
-<section id="billboard" class="bg-gradient-to-t from-neutral-800 to-neutral-900 z-50">
+<section id="billboard" class="bg-gradient-to-t from-neutral-800 to-neutral-900">
     <div class="mx-auto w-full h-[80vh] md:h-[90vh]">
         <div class="container text-center mx-auto pt-20">
-            <img src="/img/kilian.jpeg" alt="Kilian Rempen" class="mx-auto rounded-full w-1/2 lg:w-2/7 2xl:w-1/3 border-2 border-amber-800">
+            <img src="/img/kilian.jpeg" alt="Kilian Rempen" class="mx-auto rounded-full w-1/2 lg:w-2/7 2xl:w-1/3 border-2 border-amber-800 z-50">
             <div class="mt-10">
                 <h1 class="text-stone-100 text-6xl 2xl:text-8xl mt-[1em]">Kilian Rempen</h1>
                 <h2 class="text-stone-100 text-3xl 2xl:text-5xl mt-[1em] hidden md:block tracking-tight">Full-Stack Web Developer | Marketing & Brand Expert</h2>
@@ -96,33 +96,33 @@
         <p class="text-lg md:text-xl text-stone-400 max-w-2xl mx-auto tracking-tight">Click below to learn more about each project.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 container mx-auto py-10 px-5 max-w-7xl">
-        <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl pt-6 pb-3 px-6 h-full flex flex-col hover:border-amber-500/30 transition-all duration-500 hover:scale-105">
+        <div data-modal-target="web-project-1" data-modal-toggle="web-project-1" class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl pt-6 pb-3 px-6 h-full flex flex-col hover:border-amber-500/30 transition-all duration-500 hover:scale-105">
             <img src="public/img/commonality-logo.png" alt="Commonality Logo" class="rounded-xl mx-auto p-1 pb-4">
             <h2 class="text-center text-3xl text-gray-100 p-2">Commonality</h2>
             <p class="text-stone-300 text-center text-sm leading-relaxed mb-3">A hobby-partner connection app that brings people together through shared interests</p>
             <!-- Modal toggle -->
-            <button data-modal-target="web-project-1" data-modal-toggle="web-project-1" class="mt-auto block rounded-lg hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5 px-6 py-3 text-white bg-gradient-to-r from-stone-500 to-amber-700 hover:from-stone-600 hover:to-amber-800 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/25" type="button">View Details</button>
+<!--            <button data-modal-target="web-project-1" data-modal-toggle="web-project-1" class="mt-auto block rounded-lg hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5 px-6 py-3 text-white bg-gradient-to-r from-stone-500 to-amber-700 hover:from-stone-600 hover:to-amber-800 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/25" type="button">View Details</button>-->
         </div>
         <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl pt-6 pb-3 px-6 h-full flex flex-col hover:border-amber-500/30 transition-all duration-500 hover:scale-105">
             <img src="public/img/kilianrempen-com-thumb.png" alt="Kilian Web Portfolio" class="rounded-4xl mx-auto p-1 pb-4">
             <h2 class="text-center text-3xl text-gray-100 p-2">kilianrempen.com</h2>
             <p class="text-stone-300 text-center text-sm leading-relaxed mb-3">This responsive online portfolio built with JavaScript and Tailwind CSS</p>
             <!-- Modal toggle -->
-            <button data-modal-target="web-project-2" data-modal-toggle="web-project-2" class="mt-auto block rounded-lg hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5 px-6 py-3 text-white bg-gradient-to-r from-stone-500 to-amber-700 hover:from-stone-600 hover:to-amber-800 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/25" type="button">View Details</button>
+<!--            <button data-modal-target="web-project-2" data-modal-toggle="web-project-2" class="mt-auto block rounded-lg hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5 px-6 py-3 text-white bg-gradient-to-r from-stone-500 to-amber-700 hover:from-stone-600 hover:to-amber-800 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/25" type="button">View Details</button>-->
         </div>
         <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl pt-6 pb-3 px-6 h-full flex flex-col hover:border-amber-500/30 transition-all duration-500 hover:scale-105">
             <img src="public/img/etern.life-logo.png" alt="Etern.Life Logo" class="rounded-4xl mx-auto p-1 pb-4">
             <h2 class="text-center text-3xl text-gray-100 p-2">Etern.life</h2>
-            <p class="text-stone-300 text-center text-sm leading-relaxed mb-3">An Ash-Scattering / Memorial App connecting loved ones across the globe</p>
+            <p class="text-stone-300 text-center text-sm leading-relaxed mb-3">An ash scattering memorial map marking final resting places</p>
             <!-- Modal toggle -->
-            <button data-modal-target="web-project-3" data-modal-toggle="web-project-3" class="mt-auto block rounded-lg hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5 px-6 py-3 text-white bg-gradient-to-r from-stone-500 to-amber-700 hover:from-stone-600 hover:to-amber-800 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/25" type="button">View Details</button>
+<!--            <button data-modal-target="web-project-3" data-modal-toggle="web-project-3" class="mt-auto block rounded-lg hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5 px-6 py-3 text-white bg-gradient-to-r from-stone-500 to-amber-700 hover:from-stone-600 hover:to-amber-800 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/25" type="button">View Details</button>-->
         </div>
         <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl pt-6 pb-3 px-6 h-full flex flex-col hover:border-amber-500/30 transition-all duration-500 hover:scale-105">
             <img src="public/img/tphw-logo.png" alt="Turning Pointe Health & Wellness Logo" class="rounded-4xl mx-auto p-1 pb-4">
             <h2 class="text-center text-2xl text-gray-100 p-2">Turning Pointe Health & Wellness</h2>
-            <p class="text-stone-300 text-center text-sm leading-relaxed mb-3">A Western & Eastern medicine clinic with an integrated wellness approach</p>
+            <p class="text-stone-300 text-center text-sm leading-relaxed mb-3">A Western & Eastern medicine clinic</p>
             <!-- Modal toggle -->
-            <button data-modal-target="web-project-4" data-modal-toggle="web-project-4" class="mt-auto block rounded-lg hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5 px-6 py-3 text-white bg-gradient-to-r from-stone-500 to-amber-700 hover:from-stone-600 hover:to-amber-800 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/25" type="button">View Details</button>
+<!--            <button data-modal-target="web-project-4" data-modal-toggle="web-project-4" class="mt-auto block rounded-lg hover:cursor-pointer focus:ring-2 focus:outline-none focus:ring-stone-400 my-5 p-2 w-7/10 mx-auto font-medium text-center lg:w-4/5 px-6 py-3 text-white bg-gradient-to-r from-stone-500 to-amber-700 hover:from-stone-600 hover:to-amber-800 transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/25" type="button">View Details</button>-->
         </div>
     </div>
 </section>
@@ -268,6 +268,8 @@
         </figure>
     </div>
 </section>
+
+<div class="h-[.5rem] bg-gradient-to-r from-stone-400 to-stone-500"></div>
 
 <section id="about-me" class="bg-gradient-to-b from-gray-900 to-bg-neutral-900">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
