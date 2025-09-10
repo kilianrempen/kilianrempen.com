@@ -68,3 +68,9 @@ html {
         opacity: 0;
     }
 }
+
+/*TYPEWRITER EFFECT*/
+.type-caret { display:inline-block; animation: blink 1s steps(2) infinite; opacity: 1; }
+@keyframes blink { 50% { opacity: 0; } }
+/* small visual polish: ensure the typed text doesn't wrap awkwardly */
+.typewriter { white-space: nowrap; display: inline-block; }
