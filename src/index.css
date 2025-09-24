@@ -22,7 +22,7 @@ html {
 }
 
 .navbar-link-mobile {
-    @apply block px-4 py-3 text-stone-300 hover:text-white rounded-lg hover:bg-white/10 transition-all duration-300 font-medium text-xl;
+    @apply block px-4 py-3 text-stone-300 hover:text-white rounded-lg hover:bg-white/10 transition-all duration-300 font-medium text-xl shadow bg-white/5 text-shadow-black;
 }
 
 .section-title {
