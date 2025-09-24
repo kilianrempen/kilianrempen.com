@@ -34,7 +34,7 @@ html {
 }
 
 .project-image {
-    @apply rounded-4xl mx-auto p-1 pb-4;
+    @apply rounded-4xl mx-auto mx-1 p-1 pb-4;
 }
 
 .web-project {
