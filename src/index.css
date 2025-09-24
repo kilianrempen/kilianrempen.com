@@ -34,19 +34,19 @@ html {
 }
 
 .project-image {
-    @apply rounded-4xl mx-auto p-1 pb-4;
+    @apply rounded-4xl mx-auto mx-1 p-1 pb-4;
 }
 
 .web-project {
-    @apply z-30 relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl pt-6 pb-3 px-6 h-full flex flex-col hover:border-amber-500/30 transition-all duration-500 hover:scale-105 hover:cursor-pointer;
+    @apply z-30 relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 pb-2 2xl:p-6 2xl:pb-3 h-full flex flex-col hover:border-amber-500/30 transition-all duration-500 hover:scale-105 hover:cursor-pointer;
 }
 
 .ads-project {
-    @apply z-30 relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl pt-6 pb-3 px-6 h-full flex flex-col hover:border-indigo-400/30 transition-all duration-500 hover:scale-105 hover:cursor-pointer;
+    @apply z-30 relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 pb-2 2xl:p-6 2xl:pb-3 h-full flex flex-col hover:border-indigo-400/30 transition-all duration-500 hover:scale-105 hover:cursor-pointer;
 }
 
 .copy-project {
-    @apply z-30 relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl pt-6 pb-3 px-6 h-full flex flex-col hover:border-teal-500/30 transition-all duration-500 hover:scale-105 hover:cursor-pointer;
+    @apply z-30 relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 pb-2 2xl:p-6 2xl:pb-3 h-full flex flex-col hover:border-teal-500/30 transition-all duration-500 hover:scale-105 hover:cursor-pointer;
 }
 
 .project-header {
