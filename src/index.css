@@ -60,6 +60,11 @@ html {
 .tech-container {
     @apply z-30 text-center max-w-xs border-1 border-stone-300/50 rounded-xl p-8 relative bg-white/5 backdrop-blur-sm h-full hover:border-indigo-300/50 transition-all duration-500 hover:scale-105;
 }
+
+.pills-container {
+    @apply flex flex-wrap justify-center gap-2;
+}
+
 .pill {
     @apply px-5 py-2 bg-gradient-to-br from-indigo-300 to-indigo-400 rounded text-neutral-900 hover:-translate-y-1 hover:shadow-md transition-transform duration-200 cursor-crosshair hover:shadow-indigo-400;
 }
