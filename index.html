@@ -44,17 +44,8 @@
 
 <nav class="bg-white/5 backdrop-blur-lg border-b border-white/10 sticky top-0 z-50 transition-all duration-300">
 <!--        <div class="absolute inset-0 bg-gradient-to-tl from-stone-100/5 via-transparent to-amber-600/5 pointer-events-none"></div>-->
-    <div class="max-w-screen-xl mx-auto px-4 py-4">
-        <div class="flex items-center justify-center">
-            <div class="md:hidden">
-                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 rounded-lg text-stone-300 hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all duration-300">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6h18M3 12h18M3 18h18"/>
-                    </svg>
-                </button>
-            </div>
-
+    <div class="max-w-screen-xl mx-auto p-4">
+        <div id="mobile-menu-button" class="flex items-center">
             <div class="hidden md:block">
                 <ul class="flex text-md lg:text-xl items-center lg:space-x-2">
                     <li>
@@ -84,7 +75,7 @@
             </div>
 
             <div class="hidden w-full md:hidden" id="navbar-default">
-                <ul class="flex flex-col space-y-2 mt-4 p-4 bg-white/5 backdrop-blur-lg rounded-lg border border-white/10">
+                <ul class="flex flex-col space-y-2 mt-2 p-4 bg-white/5 backdrop-blur-lg rounded-lg border border-white/10 text-end">
                     <li>
                         <a href="#web-port" class="navbar-link-mobile">Web Design</a>
                     </li>
@@ -105,6 +96,16 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="md:hidden self-start">
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 rounded-lg text-stone-300 hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all duration-300">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6h18M3 12h18M3 18h18"/>
+                    </svg>
+                </button>
+            </div>
+
         </div>
     </div>
 </nav>
@@ -163,7 +164,7 @@
         <div data-modal-target="ads-project-2" data-modal-toggle="ads-project-2" class="ads-project">
             <img src="/img/west-side.jpg" alt="Kilian Web Portfolio" class="project-image">
             <h2 class="project-header">Creative Ad<br>Concepts</h2>
-            <p class="project-description">I love coming up with unique, creative ideas for ads and marketing campaigns.</p>
+            <p class="project-description">I love coming up with creative ideas for advertising and marketing campaigns.</p>
         </div>
         <div data-modal-target="ads-project-3" data-modal-toggle="ads-project-3" class="ads-project">
             <img src="/img/new-products.jpg" alt="New Products" class="project-image">
@@ -178,7 +179,7 @@
         <div data-modal-target="ads-project-5" data-modal-toggle="ads-project-5" class="ads-project">
             <img src="/img/beef-card.jpg" alt="graphic design example" class="project-image">
             <h2 class="project-header">Graphic Design<br>& Collateral</h2>
-            <p class="project-description">There's nothing like something physical in your customers' hands, like a product catalog, marketing materials, or a sales kit.</p>
+            <p class="project-description">Customers and employees still benefit from tangible items like catalogs, sales kits, and collateral.</p>
         </div>
     </div>
 </section>
@@ -228,11 +229,10 @@
         </h2>
         <p class="section-subtitle">Some of my favorite tools to work with:</p>
     </div>
-
-    <div class="flex flex-wrap justify-center gap-8 mb-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 justify-items-center mx-auto max-w-5xl md:px-10 lg:px-0">
         <div class="tech-container">
             <h3 class="text-xl pb-3">Frontend</h3>
-            <div class="flex flex-wrap justify-center gap-2">
+            <div class="pills-container">
                 <div class="pill">JavaScript</div>
                 <div class="pill">TypeScript</div>
                 <div class="pill">React.js</div>
@@ -241,10 +241,9 @@
                 <div class="pill">Tailwind CSS</div>
             </div>
         </div>
-
         <div class="tech-container">
             <h3 class="text-xl pb-3">Backend</h3>
-            <div class="flex flex-wrap justify-center gap-2">
+            <div class="pills-container">
                 <div class="pill">Node.js</div>
                 <div class="pill">Express</div>
                 <div class="pill">PostgreSQL</div>
@@ -252,10 +251,9 @@
                 <div class="pill">Zod</div>
             </div>
         </div>
-
         <div class="tech-container">
             <h3 class="text-xl pb-3">DevOps/Infrastructure</h3>
-            <div class="flex flex-wrap justify-center gap-2">
+            <div class="pills-container">
                 <div class="pill">Docker</div>
                 <div class="pill">Git</div>
                 <div class="pill">GitHub</div>
@@ -263,12 +261,9 @@
                 <div class="pill">Hosting/DNS</div>
             </div>
         </div>
-    </div>
-
-    <div class="flex flex-wrap justify-center gap-8">
         <div class="tech-container">
             <h3 class="text-xl pb-3">Marketing Automation</h3>
-            <div class="flex flex-wrap justify-center gap-2">
+            <div class="pills-container">
                 <div class="pill">Mailchimp</div>
                 <div class="pill">Hubspot</div>
                 <div class="pill">Marketo</div>
@@ -276,20 +271,18 @@
                 <div class="pill">Zapier</div>
             </div>
         </div>
-
         <div class="tech-container">
             <h3 class="text-xl pb-3">Platforms & CMS</h3>
-            <div class="flex flex-wrap justify-center gap-2">
+            <div class="pills-container">
                 <div class="pill">WordPress</div>
                 <div class="pill">Shopify</div>
                 <div class="pill">WooCommerce</div>
                 <div class="pill">Oracle NetSuite</div>
             </div>
         </div>
-
         <div class="tech-container">
             <h3 class="text-xl pb-3">Design & Planning</h3>
-            <div class="flex flex-wrap justify-center gap-2">
+            <div class="pills-container">
                 <div class="pill">Figma</div>
                 <div class="pill">Miro</div>
                 <div class="pill">Balsamiq</div>
@@ -299,7 +292,8 @@
     </div>
 </section>
 
-<section id="quote" class="bg-gradient-to-br from-gray-900 via-gray-900 to-stone-500">
+
+    <section id="quote" class="bg-gradient-to-br from-gray-900 via-gray-900 to-stone-500">
     <div class="relative z-30 max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
         <h2 class="max-w-2xl mb-10 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-stone-300 mx-auto">Let's Build Something Together</h2>
         <hr class="text-stone-200 py-5 w-1/2 mx-auto">

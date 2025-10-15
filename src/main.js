@@ -6,9 +6,6 @@ contactForm()
 
 document.addEventListener('DOMContentLoaded', () => {
     createSnowfall();
-});
-
-document.addEventListener('DOMContentLoaded', function() {
     var currentYear = new Date().getFullYear();
     document.getElementById('currentYear').textContent = currentYear;
 });
@@ -163,3 +160,22 @@ function randomCharDifferent(correct) {
 }
 function randomInt(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
 function wait(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+//MOBILE HEADER BUTTON MOVEMENT
+
+const navbar = document.querySelector('nav');
+const flexDiv = document.getElementById('mobile-menu-button');
+
+function updateMenuAlignment() {
+    const navbarTop = navbar.getBoundingClientRect().top;
+    if (Math.abs(navbarTop) < 2) {
+        flexDiv.classList.remove('justify-center');
+        flexDiv.classList.add('justify-end');
+    } else {
+        flexDiv.classList.remove('justify-end');
+        flexDiv.classList.add('justify-center');
+    }
+}
+
+window.addEventListener('scroll', updateMenuAlignment);
+window.addEventListener('DOMContentLoaded', updateMenuAlignment);
